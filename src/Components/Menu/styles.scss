@@ -1,4 +1,112 @@
-body { 
-  background-color: black;
-  color: white;
+.MenuContainer {
+  height: 85px;
+  // background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 66, 14, 0.75);
+  width: 100%;
+
+  .LogoContainer {
+    padding: 10px;
+    background-color: #fff;
+    width: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 25px #d29735;
+    margin: 14px 0px 0px 14px;
+    position: absolute;
+
+    .Logo {
+      background-image: url("../../PhotoElements/Logo/logo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 110px;
+      width: 160px;
+    }
+  }
+
+  .NavbarContainer {
+
+    width: 700px; 
+    margin: auto;
+
+    .menu{
+    }
+    
+    .menu__list{
+      text-align: center;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      list-style: none;  
+    }
+    
+    .menu__link{
+      display: block;
+      padding: 2rem 1.5rem;
+    
+      will-change: color;
+      transition: color .25s ease-out;  
+    
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+    .menu__link:focus{
+      outline: 2px solid #ffffff;
+    }
+    
+    @media (min-width: 601px){
+    
+      .menu__list{
+        display: flex;  
+      }
+    
+      .menu__group{
+        flex-grow: 1;
+      }
+    
+      .menu__link{
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .menu__link:before, .menu__link:after{
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: #fff;
+    
+        will-change: width;
+        transition: width .05s ease-out;
+    
+        position: absolute;
+        bottom: 0;
+      }
+    
+      .menu__link:before{
+        left: 50%;
+        transform: translateX(-50%); 
+      }
+    
+      .menu__link:after{
+        right: 50%;
+        transform: translateX(50%); 
+      }
+    
+      .menu__link:hover:before, .menu__link:hover:after{
+        width: 100%;
+        transition-duration: .15s;
+      }
+    }
+    
+    /* hover effect */
+    
+    .menu:hover .menu__link:not(:hover){
+      color: #a37b00;
+      // color: #d29735
+    }
+    
+  }
+
 }
