@@ -1,16 +1,21 @@
 .MenuContainer {
-  height: 85px;
+  height: 78px;
   // background-color: rgba(255, 255, 255, 0.75);
   background-color: rgba(0, 66, 14, 0.75);
   width: 100%;
+  font-size: 16px;
+  position: fixed;
 
   .LogoContainer {
-    padding: 10px;
+    // padding: 10px;
+    padding: 6px;
     background-color: #fff;
+    // width: 150px;
     width: 150px;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    box-shadow: 10px 10px 25px #d29735;
+    // box-shadow: 10px 10px 25px #d29735;
+    box-shadow: 5px 5px 25px #d29735;
     margin: 14px 0px 0px 14px;
     position: absolute;
 
@@ -18,8 +23,10 @@
       background-image: url("../../PhotoElements/Logo/logo.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      height: 110px;
-      width: 160px;
+      // height: 110px;
+      height: 108px;
+      // width: 160px;
+      width: 150px;
     }
   }
 
@@ -41,7 +48,8 @@
     
     .menu__link{
       display: block;
-      padding: 2rem 1.5rem;
+      // padding: 2rem 1.5rem;
+      padding: 27px 16px;
     
       will-change: color;
       transition: color .25s ease-out;  
@@ -53,7 +61,7 @@
     }
     
     .menu__link:focus{
-      outline: 2px solid #ffffff;
+      // outline: 2px solid #ffffff;
     }
     
     @media (min-width: 601px){
